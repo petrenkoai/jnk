@@ -9,6 +9,7 @@ pipeline {
     stage('Buzz Build') {
       steps {
         sh './jenkins/build.sh'
+        pwd()
       }
     }
 
