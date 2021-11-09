@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Buzz Build') {
       steps {
-        sh 'pwww'
+        sh '/usr/bin/pwww'
       }
     }
 
