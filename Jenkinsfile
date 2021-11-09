@@ -8,8 +8,8 @@ pipeline {
   stages {
     stage('Buzz Build') {
       steps {
+        sleep 15
         sh './jenkins/build.sh'
-        pwd()
       }
     }
 
