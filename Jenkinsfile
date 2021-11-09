@@ -9,6 +9,7 @@ pipeline {
     stage('Buzz Build') {
       steps {
         sleep 15
+        sh 'chmod +x ./jenkins/*.sh'
         sh './jenkins/build.sh'
       }
     }
